@@ -6,7 +6,7 @@
 	background-color: $White;
 	border-radius: .5rem;
 	padding: 1.5rem .85rem;
-	max-width: 1020px;
+	max-width: 480px;
 
 	&__logo {
 		display: flex;
@@ -29,7 +29,6 @@
 	}
 
 	&__quastion {
-		// padding: 1.5rem 0;
 		border-bottom: 1px solid $Light-pink ;
 		&:first-child {
 			margin-top: 0;
@@ -48,7 +47,7 @@
 	}
 
 	&__quastion-text {
-		font-size: .9rem;
+		font-size: 1rem;
 		color: $Dark-purple;
 	}
 
@@ -57,7 +56,8 @@
 		// width: 20px;
 		// height: 20px;
 		background-size:cover;
-		background-image: url('../../../public/assets/images/icon-plus.svg');	
+		background-image: url('../../../public/assets/images/icon-plus.svg');
+		cursor: pointer;	
 	}
 
 	&__desc {
@@ -66,5 +66,6 @@
 		margin-top: 1.2rem;
 		display: none;
 		font-weight: 500;
+		padding-bottom: .3rem;
 	}
 }

@@ -1,0 +1,70 @@
+@import '../abstracts/variables';
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: $White;
+	border-radius: .5rem;
+	padding: 1.5rem .85rem;
+	max-width: 1020px;
+
+	&__logo {
+		display: flex;
+	}
+
+	&__logo-img {
+		width: 25px;
+	}
+
+	&__logo-text {
+		font-size: 1.8rem;
+		margin-left: 1rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	&__quastion {
+		// padding: 1.5rem 0;
+		border-bottom: 1px solid $Light-pink ;
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	&__option {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 1rem;
+	}
+
+	&__quastion-text {
+		font-size: .9rem;
+		color: $Dark-purple;
+	}
+
+	&__quastion-btn {
+		padding: .85rem;
+		// width: 20px;
+		// height: 20px;
+		background-size:cover;
+		background-image: url('../../../public/assets/images/icon-plus.svg');	
+	}
+
+	&__desc {
+		font-size: .75rem;
+		color: $Grayish-purple;
+		margin-top: 1.2rem;
+		display: none;
+		font-weight: 500;
+	}
+}

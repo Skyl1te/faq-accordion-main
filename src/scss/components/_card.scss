@@ -49,6 +49,11 @@
 	&__quastion-text {
 		font-size: 1rem;
 		color: $Dark-purple;
+		transition: all .15s ease-out;
+		&:hover {
+			color: hsl(293, 88%, 35%);
+			transition: all .15s linear;
+		}
 	}
 
 	&__quastion-btn {

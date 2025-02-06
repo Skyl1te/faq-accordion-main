@@ -51,6 +51,11 @@ body {
 .card__quastion-text {
   font-size: 1rem;
   color: hsl(292, 42%, 14%);
+  transition: all 0.15s ease-out;
+}
+.card__quastion-text:hover {
+  color: hsl(293, 88%, 35%);
+  transition: all 0.15s linear;
 }
 .card__quastion-btn {
   padding: 0.85rem;

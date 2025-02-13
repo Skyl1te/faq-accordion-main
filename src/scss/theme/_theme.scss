@@ -1,0 +1,45 @@
+@import '../abstracts/variables';
+
+// creating a light and a dark theme on html level
+html[data-theme="light"] {
+	--color-quastion: #{$Dark-purple};
+	--color-desc: #{$Grayish-purple};
+	--color-background: #{$Light-pink};
+	--color-card: #{$White};
+
+	.unchecked {
+		filter: brightness(0.5);
+	}
+
+	#moon {
+		display: none;
+	}
+	
+	#sun {
+		display: block;
+		
+	}
+}
+
+html[data-theme="dark"] {
+	--color-quastion: #{$White};
+	--color-desc: #{$Light-pink};
+	--color-background: #{$Dark-purple};
+	--color-card: #000;
+
+	.unchecked {
+		filter: brightness(3);
+	}
+
+	#changeThemeBtn {
+		background-color: hsl(0, 0%, 13%);
+	}
+	
+	#moon {
+		display: block;
+	}
+	
+	#sun {
+		display: none;
+	}
+}

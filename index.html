@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,15 +17,21 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="dark-mode">
   <div class="wrapper">
     <div class="container">
       <div class="card">
-        <div class="card__logo">
-          <img src="./public/assets/images/icon-star.svg" alt="logo" class="card__logo-img">
-          <h1 class="card__logo-text">
-            FAQs
-          </h1>
+        <div class="card__top">
+          <div class="card__logo">
+            <img src="./public/assets/images/icon-star.svg" alt="logo" class="card__logo-img">
+            <h1 class="card__logo-text">
+              FAQs
+            </h1>
+          </div>
+          <button id="changeThemeBtn">
+            <img src="public/assets/images/sun.png"  id="sun" alt="light-mode-btn">
+            <img src="public/assets/images/moon.png" id="moon" alt="dark-mode-btn">
+          </button>
         </div>
         <div class="card__content">
           
